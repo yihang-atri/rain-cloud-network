@@ -1,0 +1,115 @@
+/*
+    @作者：一行
+    @版本：2.0
+    @地址:https://www.fk.xj.cn
+    @开原地址：https://gitee.com/Arow/rain-cloud-network
+    @更新日期：2023年2月25日15:03:12
+    @项目: QQ互联申请方案2.0
+    @简介: 专为申请QQ互联不通过的问题作出的方案，90%可通过审核
+    @说明: 感谢您使用本项目，本项目可进行二次创作发布，严禁付费！
+*/
+
+@keyframes animate_dots {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes animate_dots {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+.dot0,
+.dot1 {
+    animation: animate_dots .9s infinite;
+    -moz-animation: animate_dots .9s infinite;
+    -webkit-animation: animate_dots .9s infinite;
+    -o-animation: animate_dots .9s infinite
+}
+
+.dot1 {
+    animation-delay: .2s;
+    -webkit-animation-delay: .2s
+}
+
+.dot2 {
+    animation: animate_dots .9s infinite;
+    -moz-animation: animate_dots .9s infinite;
+    -webkit-animation: animate_dots .9s infinite;
+    -o-animation: animate_dots .9s infinite;
+    animation-delay: .4s;
+    -webkit-animation-delay: .4s
+}
+
+.dots_item {
+    display: inline-block;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #4886ff
+}
+
+.verify-icon {
+    position: absolute;
+    width: 100%;
+    margin-top: 70px;
+    text-align: center
+}
+
+.t-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    _position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .5;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    z-index: 2000000000
+}
+
+.text {
+    font-family: 'fangsong';
+    display: inline-block;
+    position: relative;
+    font-size: 40px;
+    height: 60px;
+    line-height: 60px;
+    color: rgb(245, 245, 245);
+}
+
+.text::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 5px;
+    height: 50px;
+    width: 3px;
+    background-color: #fff;
+    animation: san 0.7s steps(1) infinite;
+}
+
+@keyframes san {
+
+    0%,
+    100% {
+        background-color: #fff;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+}
